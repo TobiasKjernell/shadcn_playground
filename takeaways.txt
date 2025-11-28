@@ -1,0 +1,20 @@
+Shadcn is based on Radix UI. Radix comes with the html and logic, they are completely naked from CSS. Shadcn writes CSS into them.
+If you going to use a component from Shadcn, you will have to install them into the project, one by one. 
+Instead of importing everything, you save up alot by just using the one you need.
+It will create a 'component/ui/your-shacn-componen.tsx'
+
+CLI command: npx shadcn add <component>
+
+Shadcn using Lucide icons as default.
+
+uses oklch as color standard    
+
+in 'lib/utils', shadcn generates a function called 'cn'. cn stands for className and will make your life easier when trying to render
+some classes based on conditional. 
+
+EXAMPLE: <button className={cn('bg-color-red','text-sm', isPending ? 'text-orange-50' : 'text-green-50')}>
+
+asChild prop on dropdowns lets us use Buttons inside another button component. it kinda replaces it.
+
+Darkmode needs to be installed from: npm install next-themes
+
