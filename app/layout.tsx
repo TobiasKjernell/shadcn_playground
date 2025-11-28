@@ -39,7 +39,7 @@ export default async function RootLayout({
           defaultTheme='system'
           enableSystem
           disableTransitionOnChange>
-          <SidebarProvider>
+          <SidebarProvider defaultOpen={defaultOpen}>
 
             <AppSidebar />
             <main className="w-full">

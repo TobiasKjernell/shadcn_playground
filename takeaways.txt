@@ -18,3 +18,4 @@ asChild prop on dropdowns lets us use Buttons inside another button component. i
 
 Darkmode needs to be installed from: npm install next-themes
 
+Charts is based on Recharts plugin. 
